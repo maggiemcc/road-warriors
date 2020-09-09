@@ -49,6 +49,10 @@ We will be using git throughout the semester.  Each project much be forked and 
 - [ ] When you have completed the website, submit your repository URL
 
 The URL you used for layout is: 
-https://www.harley-davidson.com/us/en/index.html# road-warriors
+https://www.harley-davidson.com/us/en/index.html
+
+My website URL is:
+https://mm-road-warriors.netlify.app/
+
 # road-warriors
 # road-warriors
