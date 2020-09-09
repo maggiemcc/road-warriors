@@ -1,0 +1,555 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Start your code here: */
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 2rem;
+}
+
+/* HEADER */
+header {
+	background-color: black;
+	padding: 1rem 2%;
+	color: white;
+}
+
+
+header h1 {
+	text-align: right;
+	font-size: 2rem;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+/* h1,h2,h3,h4 {
+	margin: 20px 0;
+} */
+
+
+/* DESKTOP */
+@media screen and (min-width: 980px) {
+	/* body {
+	  background: red;
+	} */
+
+	nav {
+		background-color: white;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		/* border: 1px solid black; */
+	}
+	
+	nav li {display: inline-block;}
+	nav ul {margin: 0; padding: 0;}
+	nav li.active a {background-color: black; color: white;}
+	nav a {
+		display: block;
+		padding: 1.2rem 2%;
+		width: 100px;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		font-size: 2rem;
+		font-weight: 900;
+		transition: 0.5s;
+	}
+	nav ul li a:hover {
+		background-color: rgb(209, 101, 0);
+		color: white;
+		font-weight: bold;
+	}
+
+	/* MAIN DIV LINKS */
+	main div#links {
+		display: block;
+		color: black;
+		text-align: center;
+		font-size: 2rem;
+		background-color: rgb(228, 228, 228);
+		padding: 1.5rem 2%;
+		font-family: 'Oswald', sans-serif;
+	}
+	main div#links a {
+		text-decoration: none;
+		color: black;
+		/* font-size: 2rem; */
+		padding: 0 2%;
+		font-weight: 900;
+		border-right: 1px solid black;
+		display: inline-block;
+		/* line-height: 10px; */
+	}
+
+	/* MAIN DIV STREAM */
+	.streamContainer, .deliveryContainer {  
+		padding: 2%;
+		contain: content;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+		background-color: rgb(228, 228, 228);
+		/* height: 250px; */
+		/* border: 1px solid black; */
+}  
+
+  }
+
+  /* TABLET */
+  @media screen  and (max-width: 979px) {
+	/* body {
+	  background: blue;
+	} */
+
+	nav {
+		background-color: white;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	
+	nav ul {margin: 0; padding: 0;}
+	nav li.active a {background-color: black; color: white;}
+	nav a {
+		display: block;
+		padding: 1.2rem 2%;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		font-size: 2rem;
+		font-weight: 900;
+		transition: 0.5s;
+	}
+	nav ul li a:hover {
+		background-color: rgb(209, 101, 0);
+		color: white;
+		font-weight: bold;
+	}
+
+	/* MAIN DIV LINKS */
+	main div#links {
+		display: block;
+		color: black;
+		text-align: center;
+		font-size: 2rem;
+		background-color: rgb(228, 228, 228);
+		padding: 1.5rem 2%;
+		font-family: 'Oswald', sans-serif;
+	}
+	main div#links a {
+		text-decoration: none;
+		color: black;
+		/* font-size: 2rem; */
+		padding: 0 2%;
+		font-weight: 900;
+		border-right: 1px solid black;
+		display: inline-block;
+		/* line-height: 10px; */
+	}	
+
+
+	/* MAIN DIV STREAM */
+	.streamContainer, .deliveryContainer {  
+		padding: 2%;
+		contain: content;
+		display: inline-block;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+		background-color: rgb(219, 219, 219);
+}  
+
+  }
+  
+  /* MOBILE */
+  @media screen and (max-width: 500px) {
+	/* body {
+	  background: green;
+	} */
+
+	nav {
+		background-color: white;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	
+	nav ul {margin: 0; padding: 0;}
+	
+	nav a {
+		display: block;
+		padding: 1.2rem 2%;
+		background-color: white;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		font-size: 2rem;
+		font-weight: 900;
+		transition: 0.5s;
+	}
+
+	nav li.active a {
+		background-color: black; 
+		color: white; 
+	}
+
+	nav ul li a:hover {
+		background-color: rgb(209, 101, 0);
+		color: white;
+		font-weight: bold;
+	}
+
+	main div#links {
+		display: block;
+		color: black;
+		text-align: center;
+		font-size: 1.5rem;
+		background-color: rgb(228, 228, 228);
+		padding: 2rem 5%;
+		font-family: 'Oswald', sans-serif;
+	}
+	main div#links a {
+		text-decoration: none;
+		color: black;
+		padding: .5rem 3%;
+		font-weight: 900;
+		border-right: 1px solid black;
+		display: inline-block;
+	}
+
+	/* MAIN DIV STREAM */
+	.streamContainer, .deliveryContainer {  
+		padding: 2%;
+		contain: content;
+		display: inline-block;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+		background-color: rgb(219, 219, 219);
+	}  
+}
+
+
+/* TYPE */
+h1 {font-family: 'Oswald', sans-serif; font-size: 2.2rem; line-height: 2.5rem; font-weight: 900; text-transform: uppercase;}
+p {font-size: 1.5rem; line-height: 1.8rem;}
+h2 {font-family: 'Oswald', sans-serif; font-size: 2.2rem; line-height: 2.5rem; font-weight: 900; text-transform: none;}
+h1, p {margin: 1.5rem 0 .5rem 0;}
+h2 {margin: 1.5rem 0 .5rem 0;}
+
+
+/* MAIN */
+main figure.hero {width: 100%; margin: 0; padding: 0;}
+main figure.hero img {width: 100%;}
+
+button {
+	padding: 1.5rem 4.5rem;
+	margin-top: 2rem;
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 900;
+}
+
+button:hover {
+	background-color: rgb(209, 101, 0);
+	color:white;
+	cursor: pointer;
+}
+
+
+/* MAIN DIV LINKS */
+/* main div#links {
+	display: block;
+	color: black;
+	text-align: center;
+	font-size: 2rem;
+	background-color: rgb(228, 228, 228);
+	padding: 1.5rem 2%;
+	font-family: 'Oswald', sans-serif;
+}
+main div#links a {
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	padding: 0 2%;
+	font-weight: 900;
+	border-right: 1px solid black;
+	display: inline-block;
+	line-height: 10px;
+} */
+
+main div#links a:hover {
+	color: rgb(209, 101, 0);
+	/* text-transform: uppercase; */
+}
+
+main div#links a:last-child {border-right: none;}
+
+
+/* MAIN DIV STREAM */
+/* .streamContainer, .deliveryContainer {  
+	padding: 2%;
+	contain: content;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	background-color: rgb(219, 219, 219);
+	height: 250px;
+	border: 1px solid black;
+}   */
+
+.streamContainer{
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+
+.streamContainer #description-box{ 
+	padding-top: 3%;
+	padding-bottom: 3%;
+		/* border: 1px solid blue; */
+}
+
+
+
+.streamContainer #image-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* border: 1px solid blue; */
+}
+.streamContainer #image-box img{
+	width:100%;
+}
+.streamContainer #image-box figcaption{
+	text-align: center;
+}
+
+
+/* MAIN DIV DELIVERY */
+.deliveryContainer {
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+
+.deliveryContainer #image-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* border: 1px solid blue; */
+}
+.deliveryContainer #image-box img{
+	width:100%;
+}
+.deliveryContainer #image-box figcaption{
+	text-align: center;
+}
+
+
+.deliveryContainer #description-box { 
+	/* border: 1px solid blue; */
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+/* MAIN DIV OFFERS */
+.offersContainer {
+	border: 1px solid black;
+	padding: 3% .5rem;
+	contain: content;
+	background-color: black;
+	color: white;
+	text-align: center;
+	vertical-align: baseline;
+	font-size: 1.5rem;
+}
+
+main .offers button, h2 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+main .offers button {
+	background-color: white;
+	color:black;
+	margin: 15px;
+}
+
+main .offers button:hover {
+	background-color: rgb(209, 101, 0);
+	color:white;
+	cursor: pointer;
+}
+
+
+/* MAIN DIV NEW*/
+.newContainer {
+	padding: .5rem 2%;
+	/* border: 1px solid red; */
+}
+
+.newContainer h1{
+	font-size: 2rem;
+	line-height: 2rem;
+	/* padding: .5rem 2%; */
+}
+
+
+/* MAIN DIV BIKES */
+.bikeContainer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.bikeContainer figure.bikes {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+	margin-inline-end: 10px;
+}
+
+figure.bikes {
+    width: 370px;
+    margin: .2rem;
+	background-color: white;
+}
+
+figure.bikes span{
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+figure.bikes img {
+	width: 100%;
+	margin-bottom: 3%;
+}
+
+figure.bikes button {
+	margin-bottom: 5%;
+}
+
+/* FOOTER */
+footer {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	justify-content: center;
+	padding: 3rem 2%;
+	margin-top: 1.5rem;
+	color: white;
+	background-color: black;
+}
+
+footer .email button, h2 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+footer .email h1 {
+	color: rgb(209, 101, 0);
+}
+
+
+footer button {
+	background-color: white;
+	color:black;
+	margin: 15px;
+}
+
+footer div#links {
+	/* display: inline-block; */
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer div#links a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 1rem 2%;
+	/* margin: 1rem 2%; */
+	border-right: 1px solid white;
+}
+
+footer div#links a:hover {
+	text-decoration: underline;
+}
+
+footer div#links a:last-child {border-right: none;}
+
+hr {
+	background-color: grey;
+	height: 1px;
+	border: none;
+	margin: 3% 0;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
