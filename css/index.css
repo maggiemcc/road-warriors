@@ -75,49 +75,7 @@ header h1 {
 	font-family: 'Oswald', sans-serif;
 	display: inline-block;
 }
-.search{ 
-	border: 1px solid red;
-	float: right;
-	width: 260px;
-} 
 
-.search input[type=text]{ 
-	width:200px; 
-	/* height:25px;  */
-	padding: 6px 2%;
-	border-radius:10px; 
-	border: none;
-	font-size: 18px;
-} 
-
-.search button{ 
-	background-color: white; 
-	color: black; 
-	padding: 15px 15px; 
-	font-size: 18px; 
-	border: none; 
-	cursor: pointer; 
-	border-radius: 5px;
-} 
-
-
-/* .search-container button {
-	color: black;
-	background-color: white;
-	text-decoration: none;
-	padding: 2% 2%;
-	margin: auto;
-	border: 1px solid red;
-	font-family: 'Times New Roman', Times, serif;
-
-} */
-
-/* .searchContainer button{
-background-color: white;
-color:black;
-border: 1px solid red;
-justify-content: right;
-} */
 
 
 /* h1,h2,h3,h4 {
@@ -130,6 +88,51 @@ justify-content: right;
 	/* body {
 	  background: red;
 	} */
+
+	.search {
+		float: right;
+		max-width: 250px;
+		padding: 0;
+		margin: 0;
+		/* border: 1px solid red; */
+	}
+	
+	
+	.search input[type=text]{ 
+		padding: 10px;
+		font-size: 17px;
+		border: 1px solid grey;
+		float: left;
+		width: 68%;
+		background: white;
+		vertical-align: baseline;
+		margin: 0;
+	}
+	
+	.search #button button{ 
+	  float: right;
+	  height: 42px;
+	  width: 20%;
+	  padding: 5px;
+	  background: white;
+	  font-size: 17px;
+	  border: 1px solid grey;
+	  border-left: none; /* Prevent double borders */
+	  cursor: pointer;
+	  margin: 0;
+	
+	} 
+	
+	.search #button button img {
+		height: 20px;
+		padding: 2% 0;
+		justify-content: center;
+	}
+	
+	.search #button button:hover {
+		background-color: rgb(209, 101, 0);
+	}
+	
 
 	nav {
 		background-color: white;
@@ -266,6 +269,52 @@ justify-content: right;
 	/* body {
 	  background: green;
 	} */
+	header h1 {
+		margin-bottom: 5%;
+	}
+
+	.search {
+		max-width: 250px;
+		padding: 0;
+		margin: 0 5rem;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	
+	.search input[type=text]{ 
+		padding: 10px;
+		font-size: 17px;
+		border: 1px solid grey;
+		float: left;
+		width: 68%;
+		background: white;
+		margin: 0;
+	}
+	
+	.search #button button{ 
+	  float: right;
+	  height: 42px;
+	  width: 20%;
+	  padding: 5px;
+	  background: white;
+	  font-size: 17px;
+	  border: 1px solid grey;
+	  border-left: none;
+	  cursor: pointer;
+	  margin: 0;
+	} 
+	
+	.search #button button img {
+		height: 20px;
+		padding: 2% 0;
+		justify-content: center;
+	}
+	
+	.search #button button:hover {
+		background-color: rgb(209, 101, 0);
+	}
+	
 
 	nav {
 		background-color: white;
@@ -424,6 +473,7 @@ main div#links a:last-child {border-right: none;}
 }
 .streamContainer #image-box figcaption{
 	text-align: center;
+	font-size: 1rem;
 }
 
 
@@ -444,6 +494,7 @@ main div#links a:last-child {border-right: none;}
 }
 .deliveryContainer #image-box figcaption{
 	text-align: center;
+	font-size: 1rem;
 }
 
 
