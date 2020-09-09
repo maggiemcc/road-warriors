@@ -139,12 +139,20 @@ header h1 {
 		padding: 0;
 		margin: 0;
 		list-style-type: none;
+		contain: content;
 		/* border: 1px solid black; */
 	}
 	
-	nav li {display: inline-block;}
+	nav li {display: inline-block; height: 49px;}
 	nav ul {margin: 0; padding: 0;}
 	nav li.active a {background-color: black; color: white;}
+	nav input[type=text] {
+		width: 85%; 
+		margin: 0;
+		padding: 0;
+		border: 1px solid black;
+		border-radius: 3px;
+	}
 	nav a {
 		display: block;
 		padding: 1.2rem 2%;
