@@ -82,7 +82,7 @@ header h1 {
 
 
 /* DESKTOP */
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 501px) {
 	/* body {
 	  background: red;
 	} */
@@ -152,10 +152,10 @@ header h1 {
   }
 
   /* TABLET */
-  @media screen  and (max-width: 979px) {
-	/* body {
+  /* @media screen  and (max-width: 979px) {
+	body {
 	  background: blue;
-	} */
+	}
 
 	nav {
 		background-color: white;
@@ -183,7 +183,7 @@ header h1 {
 		font-weight: bold;
 	}
 
-	/* MAIN DIV LINKS */
+	MAIN DIV LINKS
 	main div#links {
 		display: block;
 		color: black;
@@ -196,16 +196,16 @@ header h1 {
 	main div#links a {
 		text-decoration: none;
 		color: black;
-		/* font-size: 2rem; */
+		
 		padding: 0 2%;
 		font-weight: 900;
 		border-right: 1px solid black;
 		display: inline-block;
-		/* line-height: 10px; */
+		
 	}	
 
 
-	/* MAIN DIV STREAM */
+	MAIN DIV STREAM
 	.streamContainer, .deliveryContainer {  
 		padding: 2%;
 		contain: content;
@@ -215,7 +215,7 @@ header h1 {
 		background-color: rgb(219, 219, 219);
 }  
 
-  }
+  } */
   
   /* MOBILE */
   @media screen and (max-width: 500px) {
