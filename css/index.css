@@ -98,10 +98,11 @@ header h1 {
 	nav input[type=text] {
 		width: 85%; 
 		margin: 0;
-		padding: 0;
+		padding: 3% 0;
 		border: 1px solid black;
 		border-radius: 3px;
 	}
+	
 	nav a {
 		display: block;
 		padding: 1.2rem 2%;
