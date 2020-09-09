@@ -73,14 +73,8 @@ header h1 {
 	text-align: right;
 	font-size: 2rem;
 	font-family: 'Oswald', sans-serif;
-	/* display: inline-block; */
 }
 
-
-
-/* h1,h2,h3,h4 {
-	margin: 20px 0;
-} */
 
 
 /* DESKTOP */
@@ -89,50 +83,6 @@ header h1 {
 	  background: red;
 	} */
 
-	/* .search {
-		float: right;
-		max-width: 250px;
-		padding: 0;
-		margin: 0;
-	}
-	
-	
-	.search input[type=text]{ 
-		padding: 10px;
-		font-size: 17px;
-		border: 1px solid grey;
-		float: left;
-		width: 68%;
-		background: white;
-		vertical-align: baseline;
-		margin: 0;
-	}
-	
-	.search #button button{ 
-	  float: right;
-	  height: 42px;
-	  width: 20%;
-	  padding: 5px;
-	  background: white;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  border-left: none;
-	  cursor: pointer;
-	  margin: 0;
-	
-	} 
-	
-	.search #button button img {
-		height: 20px;
-		padding: 2% 0;
-		justify-content: center;
-	}
-	
-	.search #button button:hover {
-		background-color: rgb(209, 101, 0);
-	} */
-	
-
 	nav {
 		background-color: white;
 		text-align: center;
@@ -140,7 +90,6 @@ header h1 {
 		margin: 0;
 		list-style-type: none;
 		contain: content;
-		/* border: 1px solid black; */
 	}
 	
 	nav li {display: inline-block; height: 49px;}
@@ -183,12 +132,10 @@ header h1 {
 	main div#links a {
 		text-decoration: none;
 		color: black;
-		/* font-size: 2rem; */
 		padding: 0 2%;
 		font-weight: 900;
 		border-right: 1px solid black;
 		display: inline-block;
-		/* line-height: 10px; */
 	}
 
 	/* MAIN DIV STREAM */
@@ -199,19 +146,13 @@ header h1 {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 20px;
 		background-color: rgb(228, 228, 228);
-		/* height: 250px; */
-		/* border: 1px solid black; */
-}  
-
-  }
+	}  
+}
 
   
   /* MOBILE */
   @media screen and (max-width: 500px) {
-	/* body {
-	  background: green;
-	} */	
-
+	  
 	nav {
 		background-color: white;
 		padding: 0;
@@ -269,7 +210,7 @@ header h1 {
 		display: inline-block;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 20px;
-		background-color: rgb(219, 219, 219);
+		background-color: rgb(228, 228, 228);
 	}  
 }
 
@@ -305,46 +246,14 @@ button:hover {
 
 
 /* MAIN DIV LINKS */
-/* main div#links {
-	display: block;
-	color: black;
-	text-align: center;
-	font-size: 2rem;
-	background-color: rgb(228, 228, 228);
-	padding: 1.5rem 2%;
-	font-family: 'Oswald', sans-serif;
-}
-main div#links a {
-	text-decoration: none;
-	color: black;
-	font-size: 2rem;
-	padding: 0 2%;
-	font-weight: 900;
-	border-right: 1px solid black;
-	display: inline-block;
-	line-height: 10px;
-} */
-
 main div#links a:hover {
 	color: rgb(209, 101, 0);
-	/* text-transform: uppercase; */
 }
 
 main div#links a:last-child {border-right: none;}
 
 
 /* MAIN DIV STREAM */
-/* .streamContainer, .deliveryContainer {  
-	padding: 2%;
-	contain: content;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
-	background-color: rgb(219, 219, 219);
-	height: 250px;
-	border: 1px solid black;
-}   */
-
 .streamContainer{
 	padding-top: 5%;
 	padding-bottom: 2%;
@@ -353,16 +262,13 @@ main div#links a:last-child {border-right: none;}
 .streamContainer #description-box{ 
 	padding-top: 3%;
 	padding-bottom: 3%;
-		/* border: 1px solid blue; */
 }
-
 
 
 .streamContainer #image-box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* border: 1px solid blue; */
 }
 .streamContainer #image-box img{
 	width:100%;
@@ -371,6 +277,7 @@ main div#links a:last-child {border-right: none;}
 	text-align: center;
 	font-size: .8rem;
 }
+
 
 
 /* MAIN DIV DELIVERY */
@@ -383,7 +290,6 @@ main div#links a:last-child {border-right: none;}
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* border: 1px solid blue; */
 }
 .deliveryContainer #image-box img{
 	width:100%;
@@ -395,10 +301,10 @@ main div#links a:last-child {border-right: none;}
 
 
 .deliveryContainer #description-box { 
-	/* border: 1px solid blue; */
 	padding-top: 3%;
 	padding-bottom: 3%;
 }
+
 
 /* MAIN DIV OFFERS */
 .offersContainer {
@@ -433,13 +339,11 @@ main .offers button:hover {
 /* MAIN DIV NEW*/
 .newContainer {
 	padding: .5rem 2%;
-	/* border: 1px solid red; */
 }
 
 .newContainer h1{
 	font-size: 2rem;
 	line-height: 2rem;
-	/* padding: .5rem 2%; */
 }
 
 
@@ -480,6 +384,7 @@ figure.bikes button {
 	margin-bottom: 5%;
 }
 
+
 /* FOOTER */
 footer {
 	font-family: 'Oswald', sans-serif;
@@ -509,7 +414,6 @@ footer button {
 }
 
 footer div#links {
-	/* display: inline-block; */
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -520,7 +424,6 @@ footer div#links a {
 	text-decoration: none;
 	color: white;
 	padding: 1rem 2%;
-	/* margin: 1rem 2%; */
 	border-right: 1px solid white;
 }
 
