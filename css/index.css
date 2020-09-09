@@ -70,10 +70,10 @@ header {
 
 
 header h1 {
-	/* text-align: left; */
+	text-align: right;
 	font-size: 2rem;
 	font-family: 'Oswald', sans-serif;
-	display: inline-block;
+	/* display: inline-block; */
 }
 
 
@@ -89,12 +89,11 @@ header h1 {
 	  background: red;
 	} */
 
-	.search {
+	/* .search {
 		float: right;
 		max-width: 250px;
 		padding: 0;
 		margin: 0;
-		/* border: 1px solid red; */
 	}
 	
 	
@@ -117,7 +116,7 @@ header h1 {
 	  background: white;
 	  font-size: 17px;
 	  border: 1px solid grey;
-	  border-left: none; /* Prevent double borders */
+	  border-left: none;
 	  cursor: pointer;
 	  margin: 0;
 	
@@ -131,7 +130,7 @@ header h1 {
 	
 	.search #button button:hover {
 		background-color: rgb(209, 101, 0);
-	}
+	} */
 	
 
 	nav {
@@ -198,124 +197,12 @@ header h1 {
 
   }
 
-  /* TABLET */
-  /* @media screen  and (max-width: 979px) {
-	body {
-	  background: blue;
-	}
-
-	nav {
-		background-color: white;
-		text-align: center;
-		padding: 0;
-		margin: 0;
-		list-style-type: none;
-	}
-	
-	nav ul {margin: 0; padding: 0;}
-	nav li.active a {background-color: black; color: white;}
-	nav a {
-		display: block;
-		padding: 1.2rem 2%;
-		color: black;
-		text-align: center;
-		text-decoration: none;
-		font-size: 2rem;
-		font-weight: 900;
-		transition: 0.5s;
-	}
-	nav ul li a:hover {
-		background-color: rgb(209, 101, 0);
-		color: white;
-		font-weight: bold;
-	}
-
-	MAIN DIV LINKS
-	main div#links {
-		display: block;
-		color: black;
-		text-align: center;
-		font-size: 2rem;
-		background-color: rgb(228, 228, 228);
-		padding: 1.5rem 2%;
-		font-family: 'Oswald', sans-serif;
-	}
-	main div#links a {
-		text-decoration: none;
-		color: black;
-		
-		padding: 0 2%;
-		font-weight: 900;
-		border-right: 1px solid black;
-		display: inline-block;
-		
-	}	
-
-
-	MAIN DIV STREAM
-	.streamContainer, .deliveryContainer {  
-		padding: 2%;
-		contain: content;
-		display: inline-block;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 20px;
-		background-color: rgb(219, 219, 219);
-}  
-
-  } */
   
   /* MOBILE */
   @media screen and (max-width: 500px) {
 	/* body {
 	  background: green;
-	} */
-	header h1 {
-		margin-bottom: 5%;
-	}
-
-	.search {
-		max-width: 250px;
-		height: 20px;
-		padding: 2% 0;
-		margin: 0 5rem;
-		display: inline-block;
-		vertical-align: top;
-	}
-	
-	
-	.search input[type=text]{ 
-		padding: 10px;
-		font-size: 17px;
-		border: 1px solid grey;
-		float: left;
-		width: 65%;
-		background: white;
-		margin: auto;
-	}
-	
-	.search #button button{ 
-	  float: right;
-	  height: 42px;
-	  width: 20%;
-	  padding: 5px;
-	  background: white;
-	  font-size: 17px;
-	  border: 1px solid grey;
-	  border-left: none;
-	  cursor: pointer;
-	  margin: 0;
-	} 
-	
-	.search #button button img {
-		height: 20px;
-		padding: 2% 0;
-		justify-content: center;
-	}
-	
-	.search #button button:hover {
-		background-color: rgb(209, 101, 0);
-	}
-	
+	} */	
 
 	nav {
 		background-color: white;
@@ -474,7 +361,7 @@ main div#links a:last-child {border-right: none;}
 }
 .streamContainer #image-box figcaption{
 	text-align: center;
-	font-size: 1rem;
+	font-size: .8rem;
 }
 
 
@@ -495,7 +382,7 @@ main div#links a:last-child {border-right: none;}
 }
 .deliveryContainer #image-box figcaption{
 	text-align: center;
-	font-size: 1rem;
+	font-size: .8rem;
 }
 
 
