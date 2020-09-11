@@ -82,9 +82,9 @@ header h1 a {
 
 
 /*-------------- H1, H2, P --------------*/
-h1 {font-size: 2.5em; font-weight: 700; text-transform: uppercase;}
-h2 {font-size: 2em; font-weight: 500; text-transform: none;}
-p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1em; line-height: 1.8rem; font-weight: 300;}
+h1 {font-family: 'Oswald', sans-serif; font-size: 2.5em; font-weight: 700; text-transform: uppercase;}
+h2 {font-family: 'Oswald', sans-serif; font-size: 2em; font-weight: 500; text-transform: none;}
+p {font-family: 'Open Sans', sans-serif; font-size: 1em; line-height: 1.8rem; font-weight: 400;}
 h1, p {margin: 1.5rem 0 .5rem 0;}
 h2 {margin: 1.5rem 0 .5rem 0;}
 
@@ -96,8 +96,9 @@ main button, footer button {
 	color: white;
 	font-size: 1rem;
 	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 900;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	
 }
 
 main button:hover, .offers button:hover, .insurance button:hover, footer button:hover {
@@ -137,6 +138,10 @@ main figure.hero img {width: 100%; margin: 0;}
 
 
 /*-------------- MAIN DIV BIKE OPTION LINKS --------------*/
+main div#links {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+}
 main div#links a:hover {
 	color: rgb(209, 101, 0);
 }
@@ -144,8 +149,8 @@ main div#links a:hover {
 main div#links a:last-child {border-right: none;}
 
 
-/*-------------- MAIN DIV STREAM --------------*/
-.streamContainer{
+/*-------------- MAIN DIV STREAM & DELIVERY --------------*/
+.streamContainer {
 	padding-top: 5%;
 	padding-bottom: 2%;
 }
@@ -160,18 +165,18 @@ main div#links a:last-child {border-right: none;}
 }
 
 
-.streamContainer #image-box {
+.streamContainer #image-box, .deliveryContainer #image-box {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.streamContainer #image-box img{
+.streamContainer #image-box img, .deliveryContainer #image-box img {
 	width:100%;
 }
-.streamContainer #image-box figcaption{
+.streamContainer #image-box figcaption, .deliveryContainer #image-box figcaption {
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	font-size: .8em;
-	
+	font-size: 1em;
 }
 
 
@@ -180,19 +185,6 @@ main div#links a:last-child {border-right: none;}
 .deliveryContainer {
 	padding-top: 2%;
 	padding-bottom: 5%;
-}
-
-.deliveryContainer #image-box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.deliveryContainer #image-box img{
-	width:100%;
-}
-.deliveryContainer #image-box figcaption{
-	text-align: center;
-	font-size: .8rem;
 }
 
 
@@ -269,7 +261,7 @@ footer {
 	font-size: 1.5rem;
 	text-align: center;
 	justify-content: center;
-	padding: 3rem 2%;
+	padding: 1rem 2%;
 	margin-top: 1.5rem;
 	color: white;
 	background-color: black;
@@ -288,6 +280,43 @@ footer .email h3 {
 	color: white;
 	font-size: 1.5em;
 }
+
+footer div#ftOptionContainer {
+	/* border: 1px solid red; */
+	/* height: 241px; */
+	padding: 0;
+	margin: 0;
+}
+
+footer #support, footer #about, footer #financing {
+	/* border: 1px solid green; */
+	/* height: 200px; */
+	padding: 0 2%;
+	contain: content;
+	display: inline-block;
+	grid-template-columns: 8ch auto;
+	line-height: 3.5rem;
+}
+
+footer #support h3, footer #about h3, footer #financing h3 {
+	font-weight: 500;
+}
+
+
+footer #support a, footer #about a, footer #financing a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+
+footer #support a:hover, footer #about a:hover, footer #financing a:hover{
+	text-decoration: underline;
+}
+
 
 footer div#links {
 	color: white;
@@ -314,16 +343,8 @@ hr {
 	background-color: grey;
 	height: 1px;
 	border: none;
-	margin: 3% 0;
+	margin: 2% 0;
 }
-
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
 
 
 
@@ -359,7 +380,7 @@ hr {
 	nav ul li a:hover {
 		background-color: rgb(209, 101, 0);
 		color: white;
-		font-weight: bold;
+		font-weight: 500;
 		width: 127px;
 	}
 
@@ -368,18 +389,15 @@ hr {
 	/* BIKE OPTION LINKS */
 	main div#links {
 		display: block;
-		color: black;
 		text-align: center;
 		font-size: 2rem;
 		background-color: rgb(228, 228, 228);
 		padding: 1.5rem 2%;
-		font-family: 'Oswald', sans-serif;
 	}
 	main div#links a {
 		text-decoration: none;
 		color: black;
 		padding: 0 2%;
-		font-weight: 900;
 		border-right: 1px solid black;
 		display: inline-block;
 	}
@@ -439,25 +457,23 @@ hr {
 	nav ul li a:hover {
 		background-color: rgb(209, 101, 0);
 		color: white;
-		font-weight: bold;
+		font-weight: 500;
 	}
 
 		/* MAIN DIV LINKS */
 	/* BIKE OPTION LINKS */
 	main div#links {
 		display: block;
-		color: black;
 		text-align: center;
 		font-size: 2rem;
 		background-color: rgb(228, 228, 228);
 		padding: 1.5rem 2%;
-		font-family: 'Oswald', sans-serif;
 	}
 	main div#links a {
 		text-decoration: none;
 		color: black;
 		padding: 0 2%;
-		font-weight: 900;
+		font-weight: 500;
 		border-right: 1px solid black;
 		display: inline-block;
 	}
@@ -486,6 +502,13 @@ hr {
 	}
 
 
+	footer #support, footer #about, footer #financing {
+		padding: 0 3%;
+		contain: content;
+		display: inline-block;
+		grid-template-columns: auto;
+		line-height: 3.5rem;
+	}
 
 }
 
@@ -524,25 +547,24 @@ hr {
 	nav ul li a:hover {
 		background-color: rgb(209, 101, 0);
 		color: white;
-		font-weight: bold;
+		font-weight: 500;
 	}
 
 	/* MAIN SECTION */
 	/* BIKE OPTION LINKS */
 	main div#links {
 		display: block;
-		color: black;
 		text-align: center;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		background-color: rgb(228, 228, 228);
 		padding: 2rem 5%;
-		
 	}
+
 	main div#links a {
 		text-decoration: none;
 		color: black;
 		padding: .5rem 3%;
-		font-weight: 900;
+		font-weight: 500;
 		border-right: 1px solid black;
 		display: inline-block;
 	}
@@ -564,4 +586,19 @@ hr {
 	.deliveryContainer #image-box {
 		margin-bottom: 1rem;
 	}
+
+	footer #support, footer #about, footer #financing {
+		padding: 2% 0;
+		contain: content;
+		display: block;
+		line-height: 3.5rem;
+	}
 }
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
