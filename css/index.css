@@ -486,7 +486,7 @@ hr {
 	} 
 	
 	.deliveryContainer #description-box { 
-		padding: 3% 0 3% 35%;
+		padding: 3% 0 3% 0;
 	}
 
 
@@ -497,7 +497,6 @@ hr {
 	.deliveryContainer {
 		padding-bottom: 1rem;
 	}
-
 
 	footer #support, footer #about, footer #financing {
 		padding: 0 3%;
