@@ -589,7 +589,7 @@ and (min-width: 501px) {
 	}
 
 	footer #support, footer #about, footer #financing {
-		padding: 2% 0;
+		padding: 2% 4%;
 		contain: content;
 		display: block;
 		line-height: 3.5rem;
