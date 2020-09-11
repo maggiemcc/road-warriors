@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	font-family: 'Oswald', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -61,28 +62,275 @@ html {
 	font-size: 2rem;
 }
 
-/* HEADER */
+/*-------------- HEADER --------------*/
 header {
 	background-color: black;
 	padding: 1rem 2%;
+}
+
+header h1 {
+	text-align: right;
+	font-size: 2.5rem;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+}
+
+header h1 a {
+	text-decoration: none;
 	color: white;
 }
 
 
-header h1 {
-	text-align: right;
-	font-size: 2rem;
+/*-------------- H1, H2, P --------------*/
+h1 {font-size: 2.5em; font-weight: 700; text-transform: uppercase;}
+h2 {font-size: 2em; font-weight: 500; text-transform: none;}
+p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1em; line-height: 1.8rem; font-weight: 300;}
+h1, p {margin: 1.5rem 0 .5rem 0;}
+h2 {margin: 1.5rem 0 .5rem 0;}
+
+/*--------------  BUTTONS -------------- */
+main button, footer button {
+	padding: 1.5rem 4.5rem;
+	margin-top: 2rem;
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
+	font-weight: 900;
+}
+
+main button:hover, .offers button:hover, .insurance button:hover, footer button:hover {
+	background-color: rgb(209, 101, 0);
+	color:white;
+	cursor: pointer;
+}
+
+.offers button, .insurance button {
+	background-color: white;
+	color:black;
+	margin: 15px;
+}
+
+.offers button, h2, .insurance button, h2 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+figure.bikes button, figure.buy button {
+	margin-bottom: 5%;
+}
+
+footer button {
+	background-color: white;
+	color:black;
+	margin: 15px;
 }
 
 
 
-/* DESKTOP */
-@media screen and (min-width: 501px) {
-	/* body {
-	  background: red;
-	} */
+/*-------------- MAIN --------------*/
+main figure.hero {width: 100%; margin: 0; padding: 0;}
+main figure.hero img {width: 100%; margin: 0;}
 
+
+
+/*-------------- MAIN DIV BIKE OPTION LINKS --------------*/
+main div#links a:hover {
+	color: rgb(209, 101, 0);
+}
+
+main div#links a:last-child {border-right: none;}
+
+
+/*-------------- MAIN DIV STREAM --------------*/
+.streamContainer{
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+
+.streamContainer p {
+	max-width: 360px;
+}
+
+.streamContainer #description-box{ 
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+
+.streamContainer #image-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.streamContainer #image-box img{
+	width:100%;
+}
+.streamContainer #image-box figcaption{
+	text-align: center;
+	font-size: .8em;
+	
+}
+
+
+
+/*-------------- MAIN DIV DELIVERY --------------*/
+.deliveryContainer {
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+
+.deliveryContainer #image-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.deliveryContainer #image-box img{
+	width:100%;
+}
+.deliveryContainer #image-box figcaption{
+	text-align: center;
+	font-size: .8rem;
+}
+
+
+.deliveryContainer #description-box { 
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+
+/*------- MAIN DIV OFFERS & INSURANCE -------*/
+.offersContainer, .insuranceContainer {
+	border: 1px solid black;
+	padding: 1% 0;
+	contain: content;
+	background-color: black;
+	color: white;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+
+/*-------------- MAIN DIV NEW & MERCH --------------*/
+.newContainer, .merchContainer {
+	padding: .5rem 2%;
+}
+
+/* .newContainer h1, .merchContainer h1 {
+	line-height: 2rem;
+} */
+
+.newContainer p, .merchContainer p {
+	max-width: 340px;
+}
+
+
+/*-------------- MAIN DIV BIKES & BUY --------------*/
+.bikeContainer, .buyContainer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.bikeContainer figure.bikes, .buyContainer figure.buy {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+	margin-inline-end: 10px;
+}
+
+figure.bikes, figure.buy {
+    width: 370px;
+    margin: .2rem;
+	background-color: white;
+}
+
+figure.bikes span, figure.buy span{
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 500;
+	
+}
+
+figure.bikes img, figure.buy img {
+	width: 100%;
+	margin-bottom: 3%;
+}
+
+
+
+/*-------------- FOOTER --------------*/
+footer {
+	font-size: 1.5rem;
+	text-align: center;
+	justify-content: center;
+	padding: 3rem 2%;
+	margin-top: 1.5rem;
+	color: white;
+	background-color: black;
+}
+
+footer .email button, h3 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+footer .email h2 {
+	color: rgb(209, 101, 0);
+}
+
+footer .email h3 {
+	color: white;
+	font-size: 1.5em;
+}
+
+footer div#links {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer div#links a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 1rem 2%;
+	font-weight: 300;
+	border-right: 1px solid white;
+}
+
+footer div#links a:hover {
+	text-decoration: underline;
+}
+
+footer div#links a:last-child {border-right: none;}
+
+hr {
+	background-color: grey;
+	height: 1px;
+	border: none;
+	margin: 3% 0;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+
+
+  /*-------------- DESKTOP --------------*/
+@media only screen and (min-width: 760px) {
+
+	/* NAVIGATION */
 	nav {
 		background-color: white;
 		text-align: center;
@@ -90,37 +338,34 @@ header h1 {
 		margin: 0;
 		list-style-type: none;
 		contain: content;
+		height: 49px;
 	}
 	
-	nav li {display: inline-block; height: 49px;}
+	nav li {display: inline-block; margin: 0; padding: 0;}
 	nav ul {margin: 0; padding: 0;}
 	nav li.active a {background-color: black; color: white;}
-	nav input[type=text] {
-		width: 85%; 
-		margin: 0;
-		padding: 3% 0;
-		border: 1px solid black;
-		border-radius: 3px;
-	}
 	
 	nav a {
 		display: block;
 		padding: 1.2rem 2%;
-		width: 100px;
+		width: 120px;
 		color: black;
 		text-align: center;
 		text-decoration: none;
 		font-size: 2rem;
-		font-weight: 900;
-		transition: 0.5s;
+		font-weight: 400;
+		transition: 0.3s;
 	}
 	nav ul li a:hover {
 		background-color: rgb(209, 101, 0);
 		color: white;
 		font-weight: bold;
+		width: 127px;
 	}
 
+
 	/* MAIN DIV LINKS */
+	/* BIKE OPTION LINKS */
 	main div#links {
 		display: block;
 		color: black;
@@ -147,22 +392,33 @@ header h1 {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 20px;
 		background-color: rgb(228, 228, 228);
-	}  
+	} 
+	
+	.deliveryContainer #description-box { 
+		padding: 3% 0 3% 35%;
+	}
+
+	.deliveryContainer p {
+		max-width: 360px;
+	}
+
+	.deliveryContainer {
+		padding-bottom: 2rem;
+	}
+
 }
 
-  
-  /* MOBILE */
-  @media screen and (max-width: 500px) {
-	  
+/*-------------- Tablet --------------*/
+@media only screen and (max-width: 760px) and (min-width: 501px) {
 	nav {
 		background-color: white;
 		padding: 0;
 		margin: 0;
 		list-style-type: none;
 	}
-	
+
 	nav ul {margin: 0; padding: 0;}
-	
+	nav li {float: left; width: 50%;}
 	nav a {
 		display: block;
 		padding: 1.2rem 2%;
@@ -171,7 +427,7 @@ header h1 {
 		text-align: center;
 		text-decoration: none;
 		font-size: 2rem;
-		font-weight: 900;
+		font-weight: 400;
 		transition: 0.5s;
 	}
 
@@ -186,6 +442,93 @@ header h1 {
 		font-weight: bold;
 	}
 
+		/* MAIN DIV LINKS */
+	/* BIKE OPTION LINKS */
+	main div#links {
+		display: block;
+		color: black;
+		text-align: center;
+		font-size: 2rem;
+		background-color: rgb(228, 228, 228);
+		padding: 1.5rem 2%;
+		font-family: 'Oswald', sans-serif;
+	}
+	main div#links a {
+		text-decoration: none;
+		color: black;
+		padding: 0 2%;
+		font-weight: 900;
+		border-right: 1px solid black;
+		display: inline-block;
+	}
+
+	/* MAIN DIV STREAM */
+	.streamContainer, .deliveryContainer {  
+		padding: 2%;
+		contain: content;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+		background-color: rgb(228, 228, 228);
+	} 
+	
+	.deliveryContainer #description-box { 
+		padding: 3% 0 3% 35%;
+	}
+
+
+	.deliveryContainer p {
+		max-width: 360px;
+	}
+
+	.deliveryContainer {
+		padding-bottom: 1rem;
+	}
+
+
+
+}
+
+
+
+
+/*-------------- MOBILE --------------*/
+  @media only screen and (max-width: 500px) {
+	  /* NAVIGATION  */
+	nav {
+		background-color: white;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	
+	nav ul {margin: 0; padding: 0;}
+	nav li {float: left; width: 50%;}
+	nav a {
+		display: block;
+		padding: 1.2rem 2%;
+		background-color: white;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		font-size: 2rem;
+		font-weight: 400;
+		transition: 0.5s;
+	}
+
+	nav li.active a {
+		background-color: black; 
+		color: white; 
+	}
+
+	nav ul li a:hover {
+		background-color: rgb(209, 101, 0);
+		color: white;
+		font-weight: bold;
+	}
+
+	/* MAIN SECTION */
+	/* BIKE OPTION LINKS */
 	main div#links {
 		display: block;
 		color: black;
@@ -193,7 +536,7 @@ header h1 {
 		font-size: 1.5rem;
 		background-color: rgb(228, 228, 228);
 		padding: 2rem 5%;
-		font-family: 'Oswald', sans-serif;
+		
 	}
 	main div#links a {
 		text-decoration: none;
@@ -213,238 +556,12 @@ header h1 {
 		grid-gap: 20px;
 		background-color: rgb(228, 228, 228);
 	}  
+	
+	.deliveryContainer p {
+		max-width: 360px;
+	}
+
+	.deliveryContainer #image-box {
+		margin-bottom: 1rem;
+	}
 }
-
-
-/* TYPE */
-h1 {font-family: 'Oswald', sans-serif; font-size: 2.2rem; line-height: 2.5rem; font-weight: 900; text-transform: uppercase;}
-p {font-size: 1.5rem; line-height: 1.8rem;}
-h2 {font-family: 'Oswald', sans-serif; font-size: 2.2rem; line-height: 2.5rem; font-weight: 900; text-transform: none;}
-h1, p {margin: 1.5rem 0 .5rem 0;}
-h2 {margin: 1.5rem 0 .5rem 0;}
-
-
-/* MAIN */
-main figure.hero {width: 100%; margin: 0; padding: 0;}
-main figure.hero img {width: 100%;}
-
-button {
-	padding: 1.5rem 4.5rem;
-	margin-top: 2rem;
-	background-color: black;
-	color: white;
-	font-size: 1rem;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 900;
-}
-
-button:hover {
-	background-color: rgb(209, 101, 0);
-	color:white;
-	cursor: pointer;
-}
-
-
-/* MAIN DIV LINKS */
-main div#links a:hover {
-	color: rgb(209, 101, 0);
-}
-
-main div#links a:last-child {border-right: none;}
-
-
-/* MAIN DIV STREAM */
-.streamContainer{
-	padding-top: 5%;
-	padding-bottom: 2%;
-}
-
-.streamContainer #description-box{ 
-	padding-top: 3%;
-	padding-bottom: 3%;
-}
-
-
-.streamContainer #image-box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.streamContainer #image-box img{
-	width:100%;
-}
-.streamContainer #image-box figcaption{
-	text-align: center;
-	font-size: .8rem;
-}
-
-
-
-/* MAIN DIV DELIVERY */
-.deliveryContainer {
-	padding-top: 2%;
-	padding-bottom: 5%;
-}
-
-.deliveryContainer #image-box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.deliveryContainer #image-box img{
-	width:100%;
-}
-.deliveryContainer #image-box figcaption{
-	text-align: center;
-	font-size: .8rem;
-}
-
-
-.deliveryContainer #description-box { 
-	padding-top: 3%;
-	padding-bottom: 3%;
-}
-
-
-/* MAIN DIV OFFERS */
-.offersContainer {
-	border: 1px solid black;
-	padding: 3% .5rem;
-	contain: content;
-	background-color: black;
-	color: white;
-	text-align: center;
-	vertical-align: baseline;
-	font-size: 1.5rem;
-}
-
-main .offers button, h2 {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-main .offers button {
-	background-color: white;
-	color:black;
-	margin: 15px;
-}
-
-main .offers button:hover {
-	background-color: rgb(209, 101, 0);
-	color:white;
-	cursor: pointer;
-}
-
-
-/* MAIN DIV NEW*/
-.newContainer {
-	padding: .5rem 2%;
-}
-
-.newContainer h1{
-	font-size: 2rem;
-	line-height: 2rem;
-}
-
-
-/* MAIN DIV BIKES */
-.bikeContainer {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
-.bikeContainer figure.bikes {
-	display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 10px;
-	margin-inline-end: 10px;
-}
-
-figure.bikes {
-    width: 370px;
-    margin: .2rem;
-	background-color: white;
-}
-
-figure.bikes span{
-	font-size: 2rem;
-	text-transform: uppercase;
-	font-weight: 900;
-}
-
-figure.bikes img {
-	width: 100%;
-	margin-bottom: 3%;
-}
-
-figure.bikes button {
-	margin-bottom: 5%;
-}
-
-
-/* FOOTER */
-footer {
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.5rem;
-	text-align: center;
-	justify-content: center;
-	padding: 3rem 2%;
-	margin-top: 1.5rem;
-	color: white;
-	background-color: black;
-}
-
-footer .email button, h2 {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-footer .email h1 {
-	color: rgb(209, 101, 0);
-}
-
-
-footer button {
-	background-color: white;
-	color:black;
-	margin: 15px;
-}
-
-footer div#links {
-	color: white;
-	text-align: center;
-	text-decoration: none;
-}
-
-footer div#links a {
-	display: inline-block;
-	text-decoration: none;
-	color: white;
-	padding: 1rem 2%;
-	border-right: 1px solid white;
-}
-
-footer div#links a:hover {
-	text-decoration: underline;
-}
-
-footer div#links a:last-child {border-right: none;}
-
-hr {
-	background-color: grey;
-	height: 1px;
-	border: none;
-	margin: 3% 0;
-}
-
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
