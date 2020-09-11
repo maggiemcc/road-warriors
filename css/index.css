@@ -283,16 +283,13 @@ footer .email h3 {
 
 footer div#ftOptionContainer {
 	/* border: 1px solid red; */
-	/* height: 241px; */
 	padding: 0;
 	margin: 0;
 }
 
 footer #support, footer #about, footer #financing {
-	/* border: 1px solid green; */
-	/* height: 200px; */
-	padding: 0 2%;
-	contain: content;
+	padding: 0 5%;
+	/* contain: content; */
 	display: inline-block;
 	grid-template-columns: 8ch auto;
 	line-height: 3.5rem;
@@ -592,6 +589,10 @@ hr {
 		contain: content;
 		display: block;
 		line-height: 3.5rem;
+	}
+
+	footer #about h3, footer #financing h3{
+		padding-top: .5rem;
 	}
 }
 
