@@ -274,11 +274,12 @@ footer .email button, h3 {
 
 footer .email h2 {
 	color: rgb(209, 101, 0);
+	font-size: 2.5rem;
 }
 
 footer .email h3 {
 	color: white;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 footer div#ftOptionContainer {
