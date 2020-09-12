@@ -589,11 +589,14 @@ and (min-width: 501px) {
 	}	
 	.deliveryContainer #description-box {
 		order: 2;
+		margin-top: 0;
 	}
 	.deliveryContainer #image-box {
-		margin-bottom: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 0;
 		order: 1;
 	}
+
 
 
 	.deliveryContainer p {
