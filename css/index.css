@@ -582,13 +582,22 @@ and (min-width: 501px) {
 		grid-gap: 20px;
 		background-color: rgb(228, 228, 228);
 	}  
-	
-	.deliveryContainer p {
-		max-width: 360px;
-	}
 
+	.deliveryContainer {
+		display: flex;
+		flex-direction: column;
+	}	
+	.deliveryContainer #description-box {
+		order: 2;
+	}
 	.deliveryContainer #image-box {
 		margin-bottom: 1rem;
+		order: 1;
+	}
+
+
+	.deliveryContainer p {
+		max-width: 360px;
 	}
 
 	/*-------FOOTER -------*/
