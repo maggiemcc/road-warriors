@@ -348,7 +348,7 @@ footer p {
 
 
   /*-------------- DESKTOP --------------*/
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 770px) {
 
 	/*------ DESKTOP ------*/
 
@@ -426,7 +426,7 @@ footer p {
 }
 
 /*-------------- Tablet --------------*/
-@media only screen and (max-width: 768px) 
+@media only screen and (max-width: 769px) 
 and (min-width: 501px) {
 
 	/*------ NAVIGATION ------*/
