@@ -348,7 +348,7 @@ footer p {
 
 
   /*-------------- DESKTOP --------------*/
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 769px) {
 
 	/*------ DESKTOP ------*/
 
@@ -426,7 +426,7 @@ footer p {
 }
 
 /*-------------- Tablet --------------*/
-@media only screen and (max-width: 760px) 
+@media only screen and (max-width: 768px) 
 and (min-width: 501px) {
 
 	/*------ NAVIGATION ------*/
@@ -493,6 +493,11 @@ and (min-width: 501px) {
 	
 	.deliveryContainer {
 		padding-bottom: 1rem;
+	}
+
+	.deliveryContainer #description-box { 
+		padding-top: 3%;
+		padding-bottom: 3%;
 	}
 
 /*----- NEW BIKES AND MERCH -----*/
