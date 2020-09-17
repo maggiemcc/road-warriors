@@ -214,10 +214,6 @@ main div#links a:last-child {border-right: none;}
 	padding: .5rem 2%;
 }
 
-/* .newContainer h1, .merchContainer h1 {
-	line-height: 2rem;
-} */
-
 .newContainer p, .merchContainer p {
 	max-width: 340px;
 }
@@ -229,20 +225,20 @@ main div#links a:last-child {border-right: none;}
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	/* border: 1px solid pink; */
 }
 
 .bikeContainer figure.bikes, .buyContainer figure.buy {
 	display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
     margin-inline-start: 10px;
-	margin-inline-end: 10px;
+	margin-inline-end: 4px;
 }
 
 figure.bikes, figure.buy {
-    width: 370px;
-    margin: .2rem;
-	background-color: white;
+	width: 360px;
+	margin: .2rem;
 }
 
 figure.bikes span, figure.buy span{
@@ -286,7 +282,6 @@ footer .email h3 {
 }
 
 footer div#ftOptionContainer {
-	/* border: 1px solid red; */
 	padding: 0;
 	margin: 0;
 }
@@ -355,7 +350,8 @@ footer p {
   /*-------------- DESKTOP --------------*/
 @media only screen and (min-width: 760px) {
 
-	/* NAVIGATION */
+	/*------ DESKTOP ------*/
+
 	nav {
 		background-color: white;
 		text-align: center;
@@ -389,8 +385,7 @@ footer p {
 	}
 
 
-	/* MAIN DIV LINKS */
-	/* BIKE OPTION LINKS */
+	/*------ MAIN DIV LINKS ------*/
 	main div#links {
 		display: block;
 		text-align: center;
@@ -406,7 +401,7 @@ footer p {
 		display: inline-block;
 	}
 
-	/* MAIN DIV STREAM */
+	/*------ MAIN DIV STREAM & DELIVERY ------*/
 	.streamContainer, .deliveryContainer {  
 		padding: 2%;
 		contain: content;
@@ -433,6 +428,8 @@ footer p {
 /*-------------- Tablet --------------*/
 @media only screen and (max-width: 760px) 
 and (min-width: 501px) {
+
+	/*------ NAVIGATION ------*/
 	nav {
 		background-color: white;
 		padding: 0;
@@ -465,8 +462,8 @@ and (min-width: 501px) {
 		font-weight: 500;
 	}
 
-		/* MAIN DIV LINKS */
-	/* BIKE OPTION LINKS */
+	/*------ MAIN DIV LINKS ------*/
+
 	main div#links {
 		display: block;
 		text-align: center;
@@ -483,7 +480,8 @@ and (min-width: 501px) {
 		display: inline-block;
 	}
 
-	/* MAIN DIV STREAM */
+	/*------ MAIN DIV STREAM & DELIVERY ------*/
+
 	.streamContainer, .deliveryContainer {  
 		padding: 2%;
 		contain: content;
@@ -493,18 +491,26 @@ and (min-width: 501px) {
 		background-color: rgb(228, 228, 228);
 	} 
 	
-	.deliveryContainer #description-box { 
-		padding: 3% 0 3% 0;
-	}
-
-
-	.deliveryContainer p {
-		max-width: 360px;
-	}
-
 	.deliveryContainer {
 		padding-bottom: 1rem;
 	}
+
+/*----- NEW BIKES AND MERCH -----*/
+	.bikeContainer figure.bikes, .buyContainer figure.buy {
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 7px;
+		margin-inline-end: 7px;
+	}
+	
+	figure.bikes, figure.buy {
+		width: 330px;
+		margin: .2rem;
+	}
+
+
+	/*------ FOOTER ------*/
 
 	footer #support, footer #about, footer #financing {
 		padding: 0 3%;
@@ -521,7 +527,8 @@ and (min-width: 501px) {
 
 /*-------------- MOBILE --------------*/
   @media only screen and (max-width: 500px) {
-	  /* NAVIGATION  */
+	
+	/*------ NAVIGATION ------*/
 	nav {
 		background-color: white;
 		padding: 0;
@@ -554,8 +561,7 @@ and (min-width: 501px) {
 		font-weight: 500;
 	}
 
-	/* MAIN SECTION */
-	/* BIKE OPTION LINKS */
+	/*------ MAIN DIVS SECTION ------*/
 	main div#links {
 		display: block;
 		text-align: center;
@@ -573,7 +579,7 @@ and (min-width: 501px) {
 		display: inline-block;
 	}
 
-	/* MAIN DIV STREAM */
+	/*------ STREAM & DELIVERY ------*/
 	.streamContainer, .deliveryContainer {  
 		padding: 2%;
 		contain: content;
@@ -597,10 +603,22 @@ and (min-width: 501px) {
 		order: 1;
 	}
 
-
-
 	.deliveryContainer p {
 		max-width: 360px;
+	}
+
+	/*----- NEW BIKES AND MERCH -----*/
+	.bikeContainer figure.bikes, .buyContainer figure.buy {
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 4px;
+		margin-inline-end: 4px;
+	}
+	
+	figure.bikes, figure.buy {
+		width: 400px;
+		margin: .2rem;
 	}
 
 	/*-------FOOTER -------*/
